@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body { /* Background Image / Main & Head Font Family */
+    background-image: url('stormy-weather-background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Oxygen', sans-serif;
+}
+.head, .main{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+.main {
+    position: absolute;
+    outline: solid 3px lightgray;
+    padding: 35px;
+    height: 400px;
+    width: 340px;
+    margin: 6px;
+    font-size: 1.4em;
+    border-radius: 2px;
+}
+.outline { /* Body Outer Outline */
+    height: 412px;
+    width: 352px;
+    outline: solid 3px white;
+    margin: 5%;
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 1.9em;
+}
+.icons { /* Icon Font */
+    color: gray;
+    font-family: 'icomoon', sans-serif;
+    margin-top: 15px;
+    font-size: 1.6em;
+}
+p {
+    margin-bottom: 20px;
+}
+.icon-mobile:before { /* Mobile Icon */
+    content: "\e958";
+}
+.icon-tablet:before { /* Tablet Icon */
+    content: "\e95a";
+}
+.icon-display:before { /* Desktop Icon */
+    content: "\e956";
+}
+@media only screen and (max-width: 400px) { /* Mobile Icon Display / Body Positioning */
+    .outline {
+        margin: 0 auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        position: center;
+    }
+    .icon-mobile {
+        color: white;
+    }
+    .head {
+        display: grid;
+    }
+    body {
+        background-position: right bottom;
+    }
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) { /* Tablet Icon Display */
+    .icon-tablet {
+        color: white;
+    }
+}
+@media only screen and (min-width: 961px) { /* Desktop Icon Display */
+    .icon-display {
+        color: white;
+    }
+}

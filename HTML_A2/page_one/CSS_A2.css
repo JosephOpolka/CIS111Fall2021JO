@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.beginning {
+    position: relative;
+}
+.T {
+    position: absolute;
+    color: white;
+    font-size: 70px;
+    top: -5px;
+    left: 27px;
+
+}
+h1, h2, h5 {
+    font-family: "Trebuchet MS", sans-serif ;
+    margin-bottom: 12px;
+}
+h5 {
+    color: gray;
+    font-size: 0.8em;
+}
+body {
+    background: linear-gradient(180deg, rgba(128,0,0,1) 0%, rgba(0,0,0,1) 100%); /* Gradient Background */
+}
+span {
+    color: red;
+}
+.par1:first-line {
+    text-transform: uppercase;
+}
+.main {
+    outline: solid black 2px;
+    margin: 7%;
+    position: center;
+    background-color: white;
+    padding: 30px;
+    font-size: 15px;
+}
+p {
+    font-family: "Georgia", sans-serif;
+    margin-bottom: 15px;
+    line-height: 1.6em;
+    text-align: justify;
+}
+.tree {
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+.tree, .end-pic {
+    outline: solid red 1px;
+}
+.tree, .compare, .bulls {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.compare {
+    float: right;
+    width: 50%;
+    margin-left: 10px;
+}
+.bulls {
+    float: left;
+    width: 55%;
+}
+.end-pic {
+    width: 100%; /* automatically the width of the main page */
+    margin-bottom: 10px;
+}
+footer {
+    font-size: 12px;
+}
+.quote, footer {
+    margin-left: 30px;
+}
