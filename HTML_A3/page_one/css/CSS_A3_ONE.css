@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'museo_sans500';
+    src: url('../assets/fonts/MuseoSans_500-webfont.woff2') format('woff2'),
+    url('../assets/fonts/MuseoSans_500-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+header {
+    position: relative;
+    margin-bottom: 10px;
+}
+h1 {
+    font-size: 100px;
+}
+.subhead {
+    font-size: 45px;
+}
+.mars {
+    width: 100%;
+    height: auto;
+}
+.title {
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    text-align: center;
+}
+body {
+    color: white;
+    background-color: black;
+    font-family: 'museo_sans500';
+    font-size: 22px;
+}
+.main {
+    padding: 40px;
+}
+p {
+    margin: 25px;
+}
+.moon-quote {
+    width: 260px;
+    height: 310px;
+    background-color: black;
+    border-bottom: 5px solid white;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.moon {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.moon-text {
+    font-size: 16px;
+}
+.quote {
+    width: 250px;
+    height: 340px;
+    border-bottom: 5px solid white;
+    border-top: 5px solid white;
+    float: left;
+    font-size: 25px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-top: 40px;
+}
+fieldset {
+    border: none;
+    align-content: center;
+    text-align: center;
+}
+.option {
+    margin: 5px;
+    font-size: 18px;
+}
+button {
+    margin-top: 20px;
+    color: white;
+    border: none;
+    font-family: 'museo_sans500';
+    background-color: #16073a;
+    border-radius: 5px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #88b0c4;
+}
+button:active {
+    background-color: white;
+    color: black;
+}
+legend {
+    font-size: 30px;
+    margin: 10px;
+}
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: 50px;
+    }
+    .subhead {
+        font-size: 30px;
+    }
+    p {
+        font-size: 18px;
+    }
+    .main {
+        padding: 20px;
+    }
+    .quote {
+        width: 100%;
+        height: auto;
+        padding-bottom: 40px;
+    }
+    .moon-quote {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 401px) and (max-width: 900px) {
+    h1 {
+        font-size: 75px;
+    }
+    .subhead {
+        font-size: 35px;
+    }
+}
