@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-@font-face {
+@font-face { /* Calling in fonts */
     font-family: 'museo_sans500';
     src: url('../assets/fonts/MuseoSans_500-webfont.woff2') format('woff2'),
     url('../assets/fonts/MuseoSans_500-webfont.woff') format('woff');
@@ -42,7 +42,7 @@ body {
 p {
     margin: 25px;
 }
-.moon-quote {
+.moon-quote { /* Bottom Moon Quote Positioning / Styling */
     width: 260px;
     height: 310px;
     background-color: black;
@@ -59,7 +59,7 @@ p {
 .moon-text {
     font-size: 16px;
 }
-.quote {
+.quote { /* Upper Quote Positioning / Styling */
     width: 250px;
     height: 340px;
     border-bottom: 5px solid white;
@@ -79,7 +79,7 @@ fieldset {
     margin: 5px;
     font-size: 18px;
 }
-button {
+button { /* Button Styling */
     margin-top: 20px;
     color: white;
     border: none;
@@ -89,7 +89,7 @@ button {
     padding: 10px 30px;
     cursor: pointer;
 }
-button:hover {
+button:hover { /* Hovering Over Button */
     background-color: #88b0c4;
 }
 button:active {
@@ -100,6 +100,7 @@ legend {
     font-size: 30px;
     margin: 10px;
 }
+/* Mobile View */
 @media only screen and (max-width: 400px) {
     h1 {
         font-size: 50px;
@@ -122,6 +123,7 @@ legend {
         width: 100%;
     }
 }
+/* Tablet View */
 @media only screen and (min-width: 401px) and (max-width: 900px) {
     h1 {
         font-size: 75px;
