@@ -1,0 +1,142 @@
+@import "SCSS_A5_VAR";
+@import "SCSS_A5_MIXIN";
+
+@font-face{
+  font-family: 'Moon';
+  src: url('../assets/fonts/Moon2.0-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Avenir';
+  src: url('../assets/fonts/Avenir.woff2') format('woff2');
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background: $bg;
+  color: $text;
+  .page{
+    width: 65%;
+    padding: 30px;
+    margin: 0 auto;
+    background: $darkGrey
+  }
+  p{
+    font-size: $para;
+    @include avenir;
+  }
+  ul{
+    font-size: $para;
+    @include avenir;
+  }
+  h1{
+    font-size: $head1;
+    @include center;
+    @include heads;
+    margin: 0 0 30px 0;
+  }
+  h2{
+    font-size: $head2;
+    @include heads;
+    @include margin;
+  }
+  h3{
+    font-size: $head3;
+    @include heads;
+    @include margin;
+  }
+  .space{
+    width: 100%;
+    @include margin;
+  }
+  .info{
+    display: flex;
+    justify-content: space-between;
+  }
+  .info-item{
+    @include alt-text;
+  }
+  .name{
+    @include alt-text;
+    @include underline;
+  }
+  a {
+    @include underline;
+    &:hover {
+      color: #d9d9d9;
+    }
+  }
+  .moon {
+    width: 40%;
+    border-radius: 500px;
+    border: solid $para black;
+    float: right;
+    margin: 0 0 $para $para;
+  }
+  @include tablet{
+    h1 {
+      font-size: 45px;
+      margin-bottom: $head2;
+    }
+    h2 {
+      font-size: $thirty;
+    }
+    h3 {
+      font-size: 22px;
+    }
+    .page {
+      padding: $para;
+      width: 80%;
+    }
+    p {
+      @include alt-text;
+      margin: $ten 0 $ten 0;
+    }
+    li {
+      @include alt-text;
+    }
+    .info-item {
+      font-size: $fifteen;
+    }
+    .moon {
+      width: 40%;
+      border-radius: 150px;
+      border: solid $fifteen black;
+      float: right;
+      margin: 0 0 $ten $ten;
+    }
+  }
+  @include mobile{
+    h1 {
+      font-size: $head2;
+      margin-bottom: $head2;
+    }
+    h2 {
+      font-size: $thirty;
+    }
+    h3 {
+      font-size: 22px;
+    }
+    .page {
+      padding: $para;
+      width: 80%;
+    }
+    p {
+      font-size: $para;
+      margin: $ten 0 $ten 0;
+    }
+    li {
+      font-size: $para;
+    }
+    .info-item, .name {
+      font-size: 12px;
+    }
+    .moon {
+      width: 40%;
+      border-radius: 150px;
+      border: solid $ten black;
+      float: right;
+      margin: 0 0 $ten $ten;
+    }
+  }
+}

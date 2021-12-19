@@ -1,0 +1,32 @@
+@import "SCSS_A5_VAR";
+@mixin margin{
+  margin: 25px 0 25px 0;
+}
+@mixin underline{
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  color: $text;
+}
+@mixin center{
+  text-align: center;
+}
+@mixin alt-text{
+  font-size: 18px;
+}
+@mixin heads{
+  font-family: 'Moon', sans-serif;
+  text-transform: uppercase;
+}
+@mixin avenir{
+  font-family: 'Avenir', sans-serif;
+}
+@mixin tablet{
+  @media only screen and (min-width: 401px) and (max-width: 900px){
+    @content;
+  }
+}
+@mixin mobile{
+  @media only screen and (max-width: 400px){
+    @content;
+  }
+}
