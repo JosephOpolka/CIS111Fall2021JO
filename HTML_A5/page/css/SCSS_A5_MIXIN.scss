@@ -1,4 +1,15 @@
-@import "SCSS_A5_VAR";
+@import "SCSS_A5_VAR"; //Calling in Variables
+
+@mixin fonts{
+  @font-face{
+    font-family: 'Moon';
+    src: url('../assets/fonts/Moon2.0-Regular.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Avenir';
+    src: url('../assets/fonts/Avenir.woff2') format('woff2');
+  }
+}
 @mixin margin{
   margin: 25px 0 25px 0;
 }
@@ -13,19 +24,19 @@
 @mixin alt-text{
   font-size: 18px;
 }
-@mixin heads{
+@mixin heads{ // All heads use same font / color
   font-family: 'Moon', sans-serif;
   text-transform: uppercase;
 }
 @mixin avenir{
   font-family: 'Avenir', sans-serif;
 }
-@mixin tablet{
+@mixin tablet{ // Tablet view
   @media only screen and (min-width: 401px) and (max-width: 900px){
     @content;
   }
 }
-@mixin mobile{
+@mixin mobile{ // Mobile view
   @media only screen and (max-width: 400px){
     @content;
   }

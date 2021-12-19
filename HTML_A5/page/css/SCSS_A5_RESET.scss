@@ -1,15 +1,6 @@
-@import "SCSS_A5_VAR";
-@import "SCSS_A5_MIXIN";
-
-@font-face{
-  font-family: 'Moon';
-  src: url('../assets/fonts/Moon2.0-Regular.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Avenir';
-  src: url('../assets/fonts/Avenir.woff2') format('woff2');
-}
-
+@import "SCSS_A5_VAR"; //Calling variables
+@import "SCSS_A5_MIXIN"; //Calling Mix-ins
+@include fonts; //Calling fonts
 body{
   margin: 0;
   padding: 0;
@@ -19,18 +10,18 @@ body{
     width: 65%;
     padding: 30px;
     margin: 0 auto;
-    background: $darkGrey
+    background: $darkGrey // Main Page BG Color
   }
   p{
     font-size: $para;
-    @include avenir;
+    @include avenir; //Calling font
   }
   ul{
     font-size: $para;
-    @include avenir;
+    @include avenir; //Calling font
   }
   h1{
-    font-size: $head1;
+    font-size: $head1; // Each head has its own font size
     @include center;
     @include heads;
     margin: 0 0 30px 0;
@@ -66,14 +57,14 @@ body{
       color: #d9d9d9;
     }
   }
-  .moon {
+  .moon { //Moon positioning / styling
     width: 40%;
     border-radius: 500px;
     border: solid $para black;
     float: right;
     margin: 0 0 $para $para;
   }
-  @include tablet{
+  @include tablet{ // Tablet view
     h1 {
       font-size: 45px;
       margin-bottom: $head2;
@@ -106,7 +97,7 @@ body{
       margin: 0 0 $ten $ten;
     }
   }
-  @include mobile{
+  @include mobile{ // Mobile view
     h1 {
       font-size: $head2;
       margin-bottom: $head2;
