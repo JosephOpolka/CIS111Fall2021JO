@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cryllix - Home</title> <!-- Title -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/SCSS_A8.css">
+    <link rel="shortcut icon" type="image/webp" href="../images/Cryllix.webp"> <!-- Icon -->
+</head>
+<body>
+    <img src="../images/Cryllix-logo.webp" alt="a logo" class="logo">
+    <h1 id="top">Welcome to Cryllix</h1>
+    <h2>A made-up, fictional website</h2>
+    <div class="intro">
+    <p>Cryllic is an online art-sharing platform. Or at least it would be if this was an actual website. Right now it is
+        just a single page meant to prove that I can make websites that function correctly. By the way I made that website
+        icon up there myself. Pretty neat, huh? Anyways I will stop talking now. Here is the rest of the page.</p>
+    </div>
+    <div class="navigate"> <!-- Navigation Tab -->
+        <h2>Sections</h2>
+        <a href="#text"><button class="select">About</button></a>
+        <a href="#ex"><button class="select">Featured</button></a>
+        <a href="#signup"><button class="select">Sign Up</button></a>
+
+    </div>
+    <div class="about">
+        <h2 id="text">About</h2>
+        <p>Here at Cryllix, we take pride in knowing that this site works properly. And by we I mean me. It is a one man
+            show around here. Judging by the layout of this site, I am going to assume you got to this section by clicking
+            one of the big buttons up top. I would not blame you. I mean it is kind of one of the centerpieces of this
+            whole page, so it is kind of expected that you would use it to get here.</p>
+    </div>
+    <div class="features"> <!-- Images Section -->
+        <h2 id="ex">Featured</h2>
+        <p>Given that this is a fake art website, check out some of the thing ive drawn myself:</p>
+        <img src="../images/pic1.webp" class="photo" alt="a first drawing"/>
+        <img src="../images/pic2.webp" class="photo" alt="a second drawing"/>
+        <img src="../images/pic3.webp" class="photo" alt="a third drawing"/>
+        <p>That is all fine and good, but I bet you are wondering how you can sign up for such a website?</p>
+        <p>Well here ya go...</p>
+    </div>
+    <div class="sign-up"> <!-- Sign-Up Section -->
+        <h2 id="signup">Sign Up</h2>
+        <p>To sign up for Cryllix, please enter the corresponding information below:</p>
+        <form action="" method="get">
+            <label for='full-name'>Username</label>
+            <input id='full-name' name='full-name' type='text'/>
+            <label for='sign'>Password</label>
+            <input id='sign' name='sign' type='password'/>
+            <div class="notify">
+                <label>Notify me on website updates:</label>
+                <input id='talk-type' name='sign' type='radio' value='updates'/>
+            </div>
+        </form>
+        <a href="#"><button class="select">Submit</button></a> <!-- Sends to top of page -->
+    </div>
+    <footer>
+        <p class="notice">This website is in no way shape or form legitimate. It is simply a fake website made for a
+            final project. Any resemblance to sites active or dead is purely coincedental. Thats a reference to movie
+            credits I just made right there. Not sure how many people will understand that, but whatever. So at the time
+            im writing this theres about eight and a half hours to go before this thing is actually due, and I was not
+            all too sure wether or not I might ge this done, but here we are.</p>
+        <a href="#popup" class="goto">Click here for more acknowledgements</a>
+    </footer>
+    <div class="popup" id="popup"> <!-- Popup Invisible Until 'goto' link is pressed -->
+        <p class="pop">This website was entirely created using HTML and SCSS/CSS code. The page icon was created specifically for
+        this page using pixel art. All fonts/images used throughout the page are in the correct file format.</p>
+        <a href="index.html" class="select exit">Exit Popup</a>
+    </div>
+    <!-- All fonts via FontSquirrel: https://www.fontsquirrel.com/-->
+    <!-- All images drawn by Joseph Opolka -->
+</body>
+</html>

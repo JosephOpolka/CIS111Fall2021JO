@@ -1,0 +1,229 @@
+@import "SCSS_A8_MIX"; //Importing Mixins
+@import "SCSS_A8_VAR"; //Importing Variables
+@import "SCSS_A8_FONT"; //Importing Fonts
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  body {
+    background: linear-gradient(180deg, #9152a6 0%, #37187a 100%) no-repeat fixed;
+    @include position;
+    .logo{ // Corner Logo
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 0;
+      width: 5%;
+      margin: $twenty;
+      background: none;
+    }
+    h1{
+      @include heads;
+      font-size: $head1;
+      margin: $fourty;
+    }
+    h2 {
+      font-size: $head2;
+      @include heads;
+    }
+    p{ // Majority of Text
+      font-size: $twenty;
+      margin-bottom: $fourty;
+      font-family: $quick;
+    }
+    .intro {
+      width: 70%;
+      margin: $margin;
+    }
+    .about {
+      width: 55%;
+      margin: $margin;
+    }
+    form{ // Sign Up Section
+      width: $eightyper;
+      font-family: $quick;
+      margin: $margin;
+      background-color: #16073a;
+      padding: $twenty 0 $ten 0;
+      margin-bottom: $fourty;
+      border-radius: 4px;
+    }
+    input{
+      margin: $ten;
+      font-family: $quick;
+      padding: 8px;
+      border: none;
+      border-radius: $twenty;
+    }
+    .features{
+      width: 60%;
+      margin: $margin;
+    }
+    .navigate{ // Navigation Section
+      height: auto;
+      width: 70%;
+      margin: $margin;
+      margin-bottom: 80px;
+      border-radius: $ten;
+      outline: solid 3px black;
+      background-color: #16073a;
+    }
+    .photo{ // Photos in Featured Section
+      width: $eightyper;
+      margin: $ten;
+      border-radius: 8px;
+      padding: $twenty;
+      background-color: #16073a;
+      transition: width 0.5s;
+      &:hover{
+        width: 85%;
+      }
+    }
+    .select{ //All Buttons
+      @include bottom;
+      padding: 15px;
+      font-size: $twenty;
+      font-family: $quick;
+      color: $white;
+      margin: $ten;
+      border: none;
+      text-transform: uppercase;
+      width: (100% / 4);
+      border-radius: 8px;
+      outline: solid 2px #ffcaf5;
+      background-color: #9e5ca8;
+      transition: width 0.4s; // Width Shift Transition
+      &:hover{
+        background-color: $white;
+        color: $black;
+        width: (100% / 3.5);
+        cursor: pointer;
+      }
+      &:active{
+        background-color: #9152a6;
+      }
+    }
+    .notice{
+      font-size: 15px;
+    }
+    footer{ // Bottom Text
+      font-family: $quick;
+      font-size: 10px;
+      background-color: #16073a;
+      padding: 30px;
+    }
+    .goto{  //Acknowledgement Window Link
+      font-size: 15px;
+      color: $white;
+      &:visited{
+        color: $white;
+      }
+      &:hover{
+        color: #e1e1e1;
+      }
+    }
+    .popup{ //Acknowledgement Window
+      background-color: #000320;
+      border-radius: 10px;
+      margin: $twenty 20%;
+      padding: 80px $fourty;
+      outline: solid 2px pink;
+      position: fixed;
+      top: 25%;
+      left: 0;
+      visibility: hidden;
+      &:target{ //When link is clicked, Pop up window becomes visible
+        visibility:visible
+      }
+    }
+    //Tablet View
+    @media only screen and (min-width: 401px) and (max-width: 900px) {
+      h1{
+        -webkit-text-stroke: 0.2px black;
+        font-size: 80px;
+        margin: $twenty;
+      }
+      h2{
+        font-size: $fourty;
+      }
+      .navigate{
+        width: 80%;
+        margin: $margin;
+        margin-bottom: $fourty;
+        border-radius: $ten;
+        outline: solid 2px black;
+      }
+      .photo {
+        width: 90%;
+        margin: 8px;
+        padding: 15px;
+        transition: width 0.5s;
+        &:hover {
+          width: 95%;
+        }
+      }
+    }
+    //Mobile View
+    @media only screen and (max-width: 400px) {
+      h1{
+        -webkit-text-stroke: 0.2px black;
+        font-size: 35px;
+        margin: $twenty;
+      }
+      h2{
+        font-size: 20px;
+        -webkit-text-stroke: 0.1px black;
+        margin-bottom: $ten;
+      }
+      p{
+        font-size: 12px;
+        margin-bottom: 15px;
+      }
+      .navigate{
+        width: 70%;
+        margin: $margin;
+        margin-bottom: $fourty;
+        border-radius: $ten;
+        outline: solid 2px black;
+      }
+      .select{
+        padding: 6px;
+        font-size: $ten;
+        margin: 10px;
+        width: (100% / 4);
+      }
+      .features{
+        width: 70%;
+      }
+      .photo {
+        width: 90%;
+        margin: 8px;
+        padding: 10px;
+        transition: width 0.5s;
+        &:hover {
+          width: 90%;
+        }
+      }
+        form{
+          width: 90%;
+          font-family: $quick;
+          padding: $twenty;
+          margin-bottom: $twenty;
+          border-radius: 4px;
+        }
+        footer{
+          padding: 15px;
+        }
+        .notice{
+          font-size: 10px;
+        }
+        .popup{
+          padding: 30px $twenty;
+
+        }
+        .pop{
+          font-size: 18px;
+        }
+      }
+    }
